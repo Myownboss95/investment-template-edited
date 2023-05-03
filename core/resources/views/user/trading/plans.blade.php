@@ -45,7 +45,7 @@
                         <div class="text-xl mb-2 text-dark">{{$currency->symbol}}{{number_format($val->min_deposit)}} - {{$currency->symbol}}{{number_format($val->amount)}} <br/><span class="text-sm text-dark">@ {{$val->percent}}% {{__('Daily')}}</span></div>
                         <p class="card-text text-sm text-dark mb-0">Runs for {{$val->duration}} {{$val->period}}@if($val->duration>1) @endif</p>
                         <!--<p class="text-sm text-dark mb-0">{{number_format($val->amount).$currency->name}} {{__('Maximum Deposit')}}</p>-->
-                        <p class="text-sm text-dark mb-0">{{ round((($val->compound - $val->min_deposit)/$val->min_deposit)*100, 2)}}% {{__('Return on Investment')}}</p>                 
+                        <p class="text-sm text-dark mb-0">{{ round($val->compound, 2)}}% {{__('Compound Return on Investment')}}</p>                 
                         <p class="text-sm text-dark mb-0">@if($val->ref_percent!=null){{$val->ref_percent}}% @else {{__('No')}} @endif{{__('Referral Bonus')}}</p>                                                
                         <!--<p class="text-sm text-dark mb-0">@if($val->bonus!=null){{$val->bonus}}% @else {{__('No')}} @endif{{__('Investment Bonus')}}</p>-->
                         <p class="text-sm text-dark mb-0">@if($val->claim==1) {{__('Access to Profit anytime')}} @else {{__('Access to profit at end of plan')}} @endif</p>

@@ -301,7 +301,7 @@
     var amount@php echo $vplan->id; @endphp = $("#buyplan{{$vplan->id}}").val();
     var cur = '{{$currency->symbol}}';
     var bonus@php echo $vplan->id; @endphp = '{{$vplan->bonus}}/100';
-    var answer@php echo $vplan->id; @endphp =parseFloat(amount@php echo $vplan->id; @endphp)*parseInt($("#duration{{$vplan->id}}").val())/100;
+    var answer@php echo $vplan->id; @endphp =parseFloat(amount@php echo $vplan->id; @endphp)*(Number($("#duration{{$vplan->id}}").val())/100);
     var compound@php echo $vplan->id; @endphp =parseFloat(answer@php echo $vplan->id; @endphp.toFixed(2))*parseFloat(bonus@php echo $vplan->id; @endphp)/100;
     $("#profit{{$vplan->id}}").text(cur+' '+answer@php echo $vplan->id; @endphp.toFixed(2));
     $("#bonus{{$vplan->id}}").text('+'+cur+' '+compound@php echo $vplan->id; @endphp.toFixed(2)+' bonus');

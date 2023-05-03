@@ -28,9 +28,9 @@ function exchange() {
 	var min_amount = $("#min_amount").val();
   
 	if (percent && duration && min_amount) {
-	  var interest_amount = (parseFloat(percent) * parseFloat(duration) * parseFloat(min_amount)) / 100;
+	  var interest_amount = ((parseFloat(percent) * parseFloat(duration) * parseFloat(min_amount)) / 100) + parseFloat(min_amount);
 	  var interest = ((interest_amount - min_amount) / min_amount) * 100;
-	  var compound_amount = min_amount * (1 + (percent / 100)) ** duration;
+	  var compound_amount = parseFloat(min_amount) * (1 + (parseFloat(percent) / 100)) ** parseFloat(duration);
 	   var compound =((compound_amount - min_amount) / min_amount) * 100;
 	  $("#compound").val(compound.toFixed(2));
 	  $("#interest").val(interest.toFixed(2));

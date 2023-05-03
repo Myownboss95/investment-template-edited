@@ -79,7 +79,7 @@
                                     <div class="input-group">
                                         <input id="compound" type="number" step="any" name="compound" class="form-control" value="{{ old('compound') }}">
                                         <span class="input-group-append">
-                                            <span class="input-group-text">$</span>
+                                            <span class="input-group-text">%</span>
                                         </span>
                                     </div>
                                     <small class="text-warning">This is calculated with the minimum amount</small>
@@ -91,7 +91,7 @@
                                     <div class="input-group">
                                         <input id="interest" type="number" step="any" name="interest" class="form-control" value="{{ old('interest') }}">
                                         <span class="input-group-append">
-                                            <span class="input-group-text">$</span>
+                                            <span class="input-group-text">%</span>
                                         </span>
                                     </div>
                                 </div>

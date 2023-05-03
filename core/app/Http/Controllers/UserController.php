@@ -811,6 +811,7 @@ class UserController extends Controller
     }  
     public function check_plan(Request $request)
     {
+        // dd($request->all());
         $plan=$data['plan']=Plans::Where('id',$request->plan)->first();
         $user=User::find(Auth::guard('user')->user()->id);
         if($request->type==1){
@@ -863,8 +864,8 @@ class UserController extends Controller
                     $sav['percent']=$plan->percent;
                     $sav['duration']=$plan->duration.' '.$plan->period;
                     $sav['c_bonus']=$plan->bonus;
-                    $sav['compound']=$plan->compound;
-                    $sav['interest']=$plan->interest;
+                    $sav['compound']=($plan->compound/100 * $request->amount) + $request->amount;
+                    $sav['interest']=($plan->interest/100 * $request->amount) + $request->amount;
                     $sav['claim']=$plan->claim;
                     $sav['recurring']=$plan->recurring;
                     $sav['profit']=0;

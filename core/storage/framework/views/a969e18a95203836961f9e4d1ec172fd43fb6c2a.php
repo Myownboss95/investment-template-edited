@@ -13,11 +13,11 @@
                 $claimed=App\Models\Claimed::whereprofit_id($val->id)->sum('amount');
                 $bonus=$val->amount*$val->c_bonus/100;
                 $c=$val->recurring;
-                $goalx=$val->compound*$val->amount/100;
-                $goal=$val->compound*$val->amount/100;
+                $goalx=$val->compound;
+                $goal=$val->compound;
                 $profitx=$goalx-$val->amount;
                 $profit=$goalx-$val->amount;
-                $pp=$val->compound*$val->amount/100;
+                $pp=$val->compound;
               ?>
               <div class="col-lg-6">
                 <div class="card">

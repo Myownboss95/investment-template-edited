@@ -309,7 +309,7 @@
     var amount<?php echo $vplan->id; ?> = $("#buyplan<?php echo e($vplan->id); ?>").val();
     var cur = '<?php echo e($currency->symbol); ?>';
     var bonus<?php echo $vplan->id; ?> = '<?php echo e($vplan->bonus); ?>/100';
-    var answer<?php echo $vplan->id; ?> =parseFloat(amount<?php echo $vplan->id; ?>)*parseInt($("#duration<?php echo e($vplan->id); ?>").val())/100;
+    var answer<?php echo $vplan->id; ?> =parseFloat(amount<?php echo $vplan->id; ?>)*(Number($("#duration<?php echo e($vplan->id); ?>").val())/100);
     var compound<?php echo $vplan->id; ?> =parseFloat(answer<?php echo $vplan->id; ?>.toFixed(2))*parseFloat(bonus<?php echo $vplan->id; ?>)/100;
     $("#profit<?php echo e($vplan->id); ?>").text(cur+' '+answer<?php echo $vplan->id; ?>.toFixed(2));
     $("#bonus<?php echo e($vplan->id); ?>").text('+'+cur+' '+compound<?php echo $vplan->id; ?>.toFixed(2)+' bonus');
