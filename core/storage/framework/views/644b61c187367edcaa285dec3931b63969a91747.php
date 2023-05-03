@@ -118,6 +118,19 @@
                                 </div>
                             </div> 
                             <div class="form-group row">
+                                <label class="col-form-label col-lg-2"><?php echo e(__('Popular Plan')); ?></label>
+                                <div class="col-lg-10">
+                                    <select class="form-control select" name="popular">
+                                        <option value="1"><?php echo e(__('Yes')); ?>
+
+                                        </option>
+                                        <option value="0"><?php echo e(__('No')); ?>
+
+                                        </option>
+                                    </select>
+                                </div>
+                            </div> 
+                            <div class="form-group row">
                                 <label class="col-form-label col-lg-2"><?php echo e(__('Status')); ?></label>
                                 <div class="col-lg-10">
                                     <select class="form-control select" name="status">

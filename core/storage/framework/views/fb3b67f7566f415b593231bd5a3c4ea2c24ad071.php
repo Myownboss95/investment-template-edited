@@ -55,8 +55,8 @@
                         <hr>
                         <?php 
                         $amount=$val->min_deposit;
-                        $interest=$val->interest + $amount.$currency->name;
-                        $compound=$val->compound + $amount.$currency->name;
+                        $interest=$amount + (($val->interest/100) * $amount).$currency->name;
+                        $compound=$amount + (($val->compound/100) * $amount).$currency->name;
                         $xstart_date=date_create(Carbon\Carbon::now());
                         date_add($xstart_date, date_interval_create_from_date_string($val->duration.' '.$val->period));
                         $xndate=date_format($xstart_date, "Y-m-d H:i:s"); 
