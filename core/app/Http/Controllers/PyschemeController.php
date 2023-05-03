@@ -96,9 +96,15 @@ class PyschemeController extends Controller
     //ere
     public function Store(Request $request)
     {
-        // $compound=$request->percent*$request->duration;
-        // $interest=$compound-100;
-        // if($interest>0){
+            $request->validate([
+                'name' => 'required',
+                'percent' => 'required',
+                'min_deposit' => 'required',
+                'amount' => 'required',
+                'duration' => 'required',
+                'interest' => 'required',
+                'compound' => 'required'
+            ]);
             $data['name'] = $request->name;
             $data['percent'] = $request->percent;
             $data['min_deposit'] = $request->min_amount;
