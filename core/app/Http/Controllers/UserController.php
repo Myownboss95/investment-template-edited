@@ -1245,6 +1245,7 @@ class UserController extends Controller
         $data['coming']=Sandplans::whereStatus(1)->where('start_date', '>', $dt->toDateTimeLocalString())->orderBy('id', 'DESC')->get();
         $data['closed']=Sandplans::whereStatus(1)->where('expiring_date', '<', $dt->toDateTimeLocalString())->orderBy('id', 'DESC')->get();
         $data['followed']=Sandfollowed::whereUser_id(Auth::guard('user')->user()->id)->orderby('id', 'DESC')->get();
+        // dd($data);
         return view('user.trading.project-plans', $data);
     }    
     public function Viewsandplan($id)

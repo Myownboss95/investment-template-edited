@@ -357,6 +357,7 @@
             <div class="row">
                 <?php if(count($followed)>0): ?> 
                     <?php $__currentLoopData = $followed; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $val): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($val->plan != null): ?>
                         <div class="col-lg-4">
                             <div class="card">
                             <div class="card-body">
@@ -442,7 +443,8 @@
                                 </div>
                             </div>
                         </div>
-                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
+                    <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
                 <?php else: ?>
                     <div class="col-md-12 mb-5">
                     <div class="text-center mt-8">

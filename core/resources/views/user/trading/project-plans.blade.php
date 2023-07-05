@@ -359,6 +359,7 @@
             <div class="row">
                 @if(count($followed)>0) 
                     @foreach($followed as $val)
+                        @if($val->plan != null)
                         <div class="col-lg-4">
                             <div class="card">
                             <div class="card-body">
@@ -444,7 +445,8 @@
                                 </div>
                             </div>
                         </div>
-                    @endforeach 
+                    @endif
+                        @endforeach 
                 @else
                     <div class="col-md-12 mb-5">
                     <div class="text-center mt-8">
