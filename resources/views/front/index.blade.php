@@ -59,7 +59,7 @@
       <div class="row justify-content-lg-center">
         <div class="col-lg-8">
                 <div id="cat" class="space-bottom-1">
-                    <h1>Why Pavilium?</h1>
+                    <h1>Why Platinum Wealth Trade?</h1>
                     <div id="basicsAccordion">
                             <!-- Card -->
                                 <div class="card shadow-none mb-3">
@@ -605,7 +605,7 @@
                 <figure class="mb-3">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="71" height="64"><path d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V448c-17.7 0-32 14.3-32 32s14.3 32 32 32H208V448h96v64H480c17.7 0 32-14.3 32-32s-14.3-32-32-32V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zm80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H112c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H240c-8.8 0-16-7.2-16-16V112zM368 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zM96 208c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H112c-8.8 0-16-7.2-16-16V208zm144-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H240c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V208zm-3 152.2c3.3 12.8-7.8 23.8-21 23.8H184c-13.3 0-24.3-10.9-21-23.8c10.6-41.5 48.2-72.2 93-72.2s82.5 30.7 93 72.2z"/></svg>
                 </figure>
-                <span class="text-dark font-weight-bold"><h3>{{__('About Pavilium')}}</h3></span> <p class="mb-0">{{__('Disciplined investment underwriting focused on properties below the institutional range in growing markets across the United States')}}</p>
+                <span class="text-dark font-weight-bold"><h3>{{__('About Platinum Wealth Trade')}}</h3></span> <p class="mb-0">{{__('Disciplined investment underwriting focused on properties below the institutional range in growing markets across the United States')}}</p>
               </div>
               <!-- End Stats -->
             </div>
@@ -618,7 +618,7 @@
                 <figure class="mb-3">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="71" height="64"><path d="M9.4 9.4C21.9-3.1 42.1-3.1 54.6 9.4L160 114.7V96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 4.3-.9 8.5-2.4 12.2c-1.6 3.7-3.8 7.3-6.9 10.3l-.1 .1c-3.1 3-6.6 5.3-10.3 6.9c-3.8 1.6-7.9 2.4-12.2 2.4H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h18.7L9.4 54.6C-3.1 42.1-3.1 21.9 9.4 9.4zM384 256c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM114.7 352H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h96 0l.1 0c8.8 0 16.7 3.6 22.5 9.3l.1 .1c3 3.1 5.3 6.6 6.9 10.3c1.6 3.8 2.4 7.9 2.4 12.2v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L114.7 352zM416 96c0-17.7 14.3-32 32-32s32 14.3 32 32v18.7L585.4 9.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 160H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448c-8.8 0-16.8-3.6-22.6-9.3l-.1-.1c-3-3.1-5.3-6.6-6.9-10.3s-2.4-7.8-2.4-12.2l0-.1v0V96zM525.3 352L630.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 397.3V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V320v0c0 0 0-.1 0-.1c0-4.3 .9-8.4 2.4-12.2c1.6-3.8 3.9-7.3 6.9-10.4c5.8-5.8 13.7-9.3 22.5-9.4c0 0 .1 0 .1 0h0 96c17.7 0 32 14.3 32 32s-14.3 32-32 32H525.3z"/></svg>
                 </figure>
-                <span class="text-dark font-weight-bold"><h3>{{__('Strategies')}}</h3></span> <p class=" mb-0">{{__('Pavilium was established with a long-term orientation to focus on value-based real estate investments with favorable risk/reward characteristics.')}}</p>
+                <span class="text-dark font-weight-bold"><h3>{{__('Strategies')}}</h3></span> <p class=" mb-0">{{__('Platinum Wealth Trade was established with a long-term orientation to focus on value-based real estate investments with favorable risk/reward characteristics.')}}</p>
               </div>
               <!-- End Stats -->
             </div>
@@ -631,7 +631,7 @@
                 <figure class="mb-3">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="71" height="64"><path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z"/></svg>
                 </figure>
-                <span class="text-dark font-weight-bold"><h3>{{__('Portfolio')}}</h3></span> <p class=" mb-0">{{__('Pavilium and its affiliates have invested over $2.7 billion in more than 17 million square feet, including 19,000 multifamily units.')}}</p>
+                <span class="text-dark font-weight-bold"><h3>{{__('Portfolio')}}</h3></span> <p class=" mb-0">{{__('Platinum Wealth Trade and its affiliates have invested over $2.7 billion in more than 17 million square feet, including 19,000 multifamily units.')}}</p>
               </div>
               <!-- End Stats -->
             </div>
