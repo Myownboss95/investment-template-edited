@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{asset('asset/dashboard/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css')}}">
 		    <link rel="stylesheet" href="{{asset('asset/dashboard/vendor/quill/dist/quill.core.css')}}">
         <link rel="stylesheet" href="{{asset('asset/dashboard/css/argon.css?v=1.1.0" type="text/css')}}">
-        <link rel="stylesheet" href="{{asset('asset/css/toast.css" type="text/css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/toast.css')}}" type="text/css">
         <link href="{{asset('asset/fonts/fontawesome/styles.min.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('asset/fonts/fontawesome/css/all.css')}}" rel="stylesheet" type="text/css">
          @yield('css')
@@ -29,7 +29,7 @@
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="{{url('/')}}">
-          <img src="{{asset($logo->image_link)}}" class="navbar-brand-img" alt="...">
+          <img src="{{asset('asset/'.$logo->image_link)}}" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->

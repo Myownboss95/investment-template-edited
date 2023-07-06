@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
     <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <base href="<?php echo e(url('/')); ?>"/>
-        <title><?php echo e($title); ?> | <?php echo e($set->site_name); ?></title>
+        <title>Master <?php echo e($title); ?> | <?php echo e($set->site_name); ?> Master</title>
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="<?php echo e(asset('asset/dashboard/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css')); ?>">
 		    <link rel="stylesheet" href="<?php echo e(asset('asset/dashboard/vendor/quill/dist/quill.core.css')); ?>">
         <link rel="stylesheet" href="<?php echo e(asset('asset/dashboard/css/argon.css?v=1.1.0" type="text/css')); ?>">
-        <link rel="stylesheet" href="<?php echo e(asset('asset/css/toast.css" type="text/css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('asset/css/toast.css')); ?>" type="text/css">
         <link href="<?php echo e(asset('asset/fonts/fontawesome/styles.min.css')); ?>" rel="stylesheet" type="text/css">
         <link href="<?php echo e(asset('asset/fonts/fontawesome/css/all.css')); ?>" rel="stylesheet" type="text/css">
          <?php echo $__env->yieldContent('css'); ?>
@@ -29,7 +29,7 @@
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-          <img src="<?php echo e(asset($logo->image_link)); ?>" class="navbar-brand-img" alt="...">
+          <img src="<?php echo e(asset('asset/'.$logo->image_link)); ?>" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->
