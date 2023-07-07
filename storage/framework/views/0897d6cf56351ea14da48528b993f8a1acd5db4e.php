@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <base href="<?php echo e(url('/')); ?>"/>
-        <title>MasterUser <?php echo e($title); ?> | <?php echo e($set->site_name); ?></title>
+        <title><?php echo e($title); ?> | <?php echo e($set->site_name); ?></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <meta name="robots" content="index, follow">

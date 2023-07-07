@@ -501,10 +501,10 @@ class UserController extends Controller
         $user = User::findOrFail(Auth::guard('user')->user()->id);
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $filename = $user->username.time().'kyc.'.$image->extension();
+            $filename = time().'kyc.'.$image->extension();
             $location = public_path('asset/profile/') . $filename;
             if ($user->kyc_link!=null) {
-                $link = './asset/profile/' . $user->kyc_link;
+                $link = public_path('asset/profile/') . $user->kyc_link;
                 if (file_exists($link)) {
                     @unlink($link);
                 }
