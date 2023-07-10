@@ -130,7 +130,8 @@ class RegisterController extends Controller
         $user->verification_code = $verification_code;
         $user->email_time = $email_time;
         $user->ref_bonus = $basic->balance_reg;
-        $user->ip_address = user_ip();
+        $user->ip_address =  Str::limit(user_ip(), 255);
+
         $user->password = Hash::make($request->password);
         if($request->has('ref')){
             if($set->referral_type=="username"){
