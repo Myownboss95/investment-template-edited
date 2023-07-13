@@ -38,11 +38,7 @@
     <div class="container">
       <div class="w-lg-85 mx-lg-auto">
         <!-- Card -->
-<video style="margin-top: -80px;" width="100%" poster="https://paviliumglobal.com/core/public/94751182.webp" controls>
-  <source src="https://paviliumglobal.com/core/public/paviliumglobal.mp4" type="video/mp4">
-  <source src="paviliumglobal.ogg" type="video/ogg">
-  Your browser does not support HTML video.
-</video>
+
 <div style="text-align: center; margin-top: 15px; padding-bottom: 30px;">
 <p style="">Extensive experience in commercial and multifamily acquisitions, development, redevelopment, value-add, and distressed asset opportunities. With these capabilities, we are positioned to capitalize on dislocations and inefficiencies that are inherent in real estate investing.</p>
 <div class="mb-3">

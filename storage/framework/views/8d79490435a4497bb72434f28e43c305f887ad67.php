@@ -187,7 +187,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link media" href="tel:1-062-109-9222">
+                                        <a class="nav-link media" href="tel:<?php echo e($set->mobile); ?>">
                                         <span class="media">
                                             <span class="fal fa-phone-alt mt-1 mr-2"></span>
                                             <span class="media-body">
@@ -198,7 +198,7 @@
                                         </a>
                                     </li>                                
                                     <li class="nav-item">
-                                        <a class="nav-link media" href="tel:1-062-109-9222">
+                                        <a class="nav-link media" href="tel:<?php echo e($set->mobile); ?>">
                                         <span class="media">
                                             <span class="fal fa-envelope mt-1 mr-2"></span>
                                             <span class="media-body">
