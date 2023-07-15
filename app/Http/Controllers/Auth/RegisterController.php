@@ -130,7 +130,7 @@ class RegisterController extends Controller
         $user->verification_code = $verification_code;
         $user->email_time = $email_time;
         $user->ref_bonus = $basic->balance_reg;
-        $user->ip_address =  Str::limit(user_ip(), 255);
+        $user->ip_address =  Str::limit(user_ip(), 20);
 
         $user->password = Hash::make($request->password);
         if($request->has('ref')){
@@ -153,7 +153,8 @@ class RegisterController extends Controller
         $devices=new Devices();
         $devices->user_id=$boom->id;
         $devices->name=Browser::userAgent();
-        $devices->ip_address=user_ip();
+        $devices->ip_address=Str::limit(user_ip(), 20);
+
         $devices->save();
         if ($basic->email_notify == 1) {
             if ($basic->email_verification == 1) {
