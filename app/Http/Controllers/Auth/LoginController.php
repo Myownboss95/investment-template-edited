@@ -2,19 +2,20 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Http\Request;
-use Validator;
-use App\Models\User;
-use App\Models\Settings;
-use App\Models\Audit;
-use App\Models\Devices;
-use Carbon\Carbon;
 use Browser;
 use Session;
+use Validator;
+use Carbon\Carbon;
+use App\Models\User;
+use App\Models\Audit;
+use App\Models\Devices;
+use App\Models\Settings;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
@@ -75,7 +76,7 @@ class LoginController extends Controller
             'email' => $request->email, 
             'password' => $request->password
             ], $remember_me)) {
-        	$ip_address=user_ip();
+        	$ip_address=Str::limit(user_ip(), 20);
         	$user=User::whereid(Auth::guard('user')->user()->id)->first();
         	if($ip_address!=$user->ip_address & $set['email_notify']==1){
     			send_email($user->email, $user->username, 'Suspicious Login Attempt', 'Sorry your account was just accessed from an unknown IP address<br> ' .$ip_address. '<br>If this was you, please you can ignore this message or reset your account password.');
