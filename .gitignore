@@ -1,5 +1,6 @@
 /vendor/
 .env
 .htaccess
+/storage/framework/*
 # composer.lock
 # composer.json
