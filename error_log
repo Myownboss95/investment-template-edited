@@ -1,1 +1,0 @@
-[26-Nov-2022 01:43:29 UTC] PHP Fatal error:  Can't use method return value in write context in /home/angecbir/paviliumglobal.com/access/core/app/Providers/AppServiceProvider.php on line 280
