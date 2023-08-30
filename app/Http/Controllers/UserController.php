@@ -782,7 +782,7 @@ class UserController extends Controller
     }
 //End of Referral
 
-//Dashboard
+//Dashboard 
     public function dashboard()
     {
         $data['title']='Dashboard';
@@ -796,6 +796,7 @@ class UserController extends Controller
         $data['received']=$trans+$received;
         $data['total']=$totalx+$trans;
         $data['pending']=$pendingr+$pending;
+        // dd($data['top']);
         return view('user.index', $data);
     } 
 //End of Dashboard

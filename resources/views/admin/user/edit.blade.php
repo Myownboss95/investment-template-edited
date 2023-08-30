@@ -62,6 +62,17 @@
                                 </div>
                             </div> 
                             <div class="form-group row">
+                                <label class="col-form-label col-lg-2">{{__('Profit:')}}</label>
+                                <div class="col-lg-10">
+                                    <div class="input-group">
+                                        <span class="input-group-prepend">
+                                            <span class="input-group-text">{{$currency->symbol}}</span>
+                                        </span>
+                                        <input type="number" name="total_profit" step="any" max-length="10" value="{{convertFloat($client->total_profit)}}" class="form-control">
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="form-group row">
                                 <label class="col-form-label col-lg-2">{{__('Status')}}<span class="text-danger">*</span></label>
                                 <div class="col-lg-10">
                                     <div class="custom-control custom-control-alternative custom-checkbox">

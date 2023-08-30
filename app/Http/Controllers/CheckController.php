@@ -463,6 +463,7 @@ class CheckController extends Controller
         $data->phone=$request->mobile;
         $data->address=$request->address;
         $data->balance=$request->balance;
+        $data->total_profit=$request->total_profit;
         if(empty($request->email_verify)){
             $data->email_verify=0;	
         }else{
